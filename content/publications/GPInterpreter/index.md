@@ -1,25 +1,23 @@
 ---
-title: 'Behind the Hot Fix: Demystifying Hot Fixing Industrial Practices at Zühlke and Beyond'
+title: 'Improving a Parallel C++ Intel AVX-512 SIMD Linear Genetic Programming Interpreter'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - William B Langdon
   - Carol Hanna
-  - David Elliman
-  - Wolfgang Emmerich
-  - Federica Sarro
-  - Justyna Petke
+
 
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2025-07-28'
+date: '2026-01-01'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-28'
+publishDate: '2026-01-01'
 
 
 # Publication type.
@@ -28,17 +26,17 @@ publishDate: '2025-07-28'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication:  In International Conference on the Foundations of Software Engineering
-# publication_short: In International Conference on the Foundations of Software Engineering
+publication: In International Workshop on Genetic Improvement@ ICSE
+# publication_short: In International Workshop on Genetic Improvement@ ICSE
 
-abstract: Rushing a hot fix and having it fail can severely damage a software company's reputation, impacting user satisfaction and future business opportunities. Ensuring best practices for emergency bug handling is critical, yet the process remains elusive in the industry. We are the first to conduct a study to gain insights on hot fixing industrial practices. We surveyed 24 employees of Zühlke, a midsized IT company specializing in providing software engineering services to clients from different domains. We also surveyed 136 software practitioners from a wide range of companies, roles, and geographical areas through an online questionnaire, most having over 10 years of professional experience. Among others, we found that terminology around hot fixing is inconsistent; 56.7% of questionnaire participants stated automated tooling exists for hot fix deployment, but only 25% responded that some tooling is available for hot fix generation; Zühlke employees reported significantly faster hot fix resolution times, attributed to their strong emphasis on agile practices, averaging hours vs. days in other companies. Based on our study's results we offer key recommendations for both software engineering researchers and industry practitioners.
+abstract: We use evolution to speedup the Single Instruction Multiple Data (SIMD) parallel interpreter for Peter Nordin’s linear genetic programming GPengine. MAGPIE (Machine Automated General Performance Improvement via Evolution of software) is provided with existing hand-optimised source code, its revision history and the Intel 256 bit SSE intrinsics documentation as XML. Fitness is measured via perf’s hardware instruction count, while validity and safety are enforced through systematic test cases and memory sandbox protection via Linux mprotect. In a matter of hours local search discovered small, non-obvious program modifications that improve the performance of 128 lines of SIMD C++ code by 2%, without sacrificing correctness. We see genetic improvement can effectively exploit Intel Advanced Vector Extensions (AVX) parallelism, automatically refining complex code that is difficult for human developers to optimise reliably.
 
 tags:
-  - Hot Fix
-  - Software Maintenance
+  - Genetic Improvement
+  - Evolutionary Computation
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Standard identifiers for auto-linking
 hugoblox:
@@ -49,7 +47,7 @@ hugoblox:
 links:
   - type: paper
     label: Paper
-    url: "https://dl.acm.org/doi/10.1145/3696630.3728564"
+    url: "https://solar.cs.ucl.ac.uk/pdf/langdon_2026_GI.pdf"
   # - type: code
   #   url: https://github.com/HugoBlox/kit
   # - type: dataset

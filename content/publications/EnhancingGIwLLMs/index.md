@@ -1,25 +1,28 @@
 ---
-title: 'Behind the Hot Fix: Demystifying Hot Fixing Industrial Practices at Zühlke and Beyond'
+title: 'Enhancing genetic improvement mutations using large language models'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Alexander E.I. Brownlee
+  - James Callan
+  - Karine Even-Mendoza
+  - Alina Geiger
   - Carol Hanna
-  - David Elliman
-  - Wolfgang Emmerich
-  - Federica Sarro
   - Justyna Petke
+  - Federica Sarro
+  - Dominik Sobania
 
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2025-07-28'
+date: '2023-12-10'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-28'
+publishDate: '2023-12-10'
 
 
 # Publication type.
@@ -28,17 +31,17 @@ publishDate: '2025-07-28'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication:  In International Conference on the Foundations of Software Engineering
-# publication_short: In International Conference on the Foundations of Software Engineering
+publication: In International symposium on search based software engineering
+# publication_short: In International symposium on search based software engineering
 
-abstract: Rushing a hot fix and having it fail can severely damage a software company's reputation, impacting user satisfaction and future business opportunities. Ensuring best practices for emergency bug handling is critical, yet the process remains elusive in the industry. We are the first to conduct a study to gain insights on hot fixing industrial practices. We surveyed 24 employees of Zühlke, a midsized IT company specializing in providing software engineering services to clients from different domains. We also surveyed 136 software practitioners from a wide range of companies, roles, and geographical areas through an online questionnaire, most having over 10 years of professional experience. Among others, we found that terminology around hot fixing is inconsistent; 56.7% of questionnaire participants stated automated tooling exists for hot fix deployment, but only 25% responded that some tooling is available for hot fix generation; Zühlke employees reported significantly faster hot fix resolution times, attributed to their strong emphasis on agile practices, averaging hours vs. days in other companies. Based on our study's results we offer key recommendations for both software engineering researchers and industry practitioners.
+abstract: Large language models (LLMs) have been successfully applied to software engineering tasks, including program repair. However, their application in search-based techniques such as Genetic Improvement (GI) is still largely unexplored. In this paper, we evaluate the use of LLMs as mutation operators for GI to improve the search process. We expand the Gin Java GI toolkit to call OpenAI's API to generate edits for the JCodec tool. We randomly sample the space of edits using 5 different edit types. We find that the number of patches passing unit tests is up to 75% higher with LLM-based edits than with standard Insert edits. Further, we observe that the patches found with LLMs are generally less diverse compared to standard edits. We ran GI with local search to find runtime improvements. Although many improving patches are found by LLM-enhanced GI, the best improving patch was found by standard GI.
 
 tags:
-  - Hot Fix
-  - Software Maintenance
+  - Large Langage Models
+  - Genetic Improvement
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Standard identifiers for auto-linking
 hugoblox:
@@ -49,7 +52,7 @@ hugoblox:
 links:
   - type: paper
     label: Paper
-    url: "https://dl.acm.org/doi/10.1145/3696630.3728564"
+    url: "https://arxiv.org/abs/2310.19813"
   # - type: code
   #   url: https://github.com/HugoBlox/kit
   # - type: dataset

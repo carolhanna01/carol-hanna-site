@@ -1,14 +1,13 @@
 ---
-title: 'Behind the Hot Fix: Demystifying Hot Fixing Industrial Practices at Zühlke and Beyond'
+title: 'HotBugs. jar: A Benchmark of Hot Fixes for Time-Critical Bugs'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Carol Hanna
-  - David Elliman
-  - Wolfgang Emmerich
   - Federica Sarro
+  - Mark Harman
   - Justyna Petke
 
 # Author notes (optional)
@@ -16,10 +15,10 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2025-07-28'
+# date: '2025-07-28'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-28'
+publishDate: '2026-02-01'
 
 
 # Publication type.
@@ -28,14 +27,15 @@ publishDate: '2025-07-28'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication:  In International Conference on the Foundations of Software Engineering
-# publication_short: In International Conference on the Foundations of Software Engineering
+publication: Under Review
+# publication_short: Under Review
 
-abstract: Rushing a hot fix and having it fail can severely damage a software company's reputation, impacting user satisfaction and future business opportunities. Ensuring best practices for emergency bug handling is critical, yet the process remains elusive in the industry. We are the first to conduct a study to gain insights on hot fixing industrial practices. We surveyed 24 employees of Zühlke, a midsized IT company specializing in providing software engineering services to clients from different domains. We also surveyed 136 software practitioners from a wide range of companies, roles, and geographical areas through an online questionnaire, most having over 10 years of professional experience. Among others, we found that terminology around hot fixing is inconsistent; 56.7% of questionnaire participants stated automated tooling exists for hot fix deployment, but only 25% responded that some tooling is available for hot fix generation; Zühlke employees reported significantly faster hot fix resolution times, attributed to their strong emphasis on agile practices, averaging hours vs. days in other companies. Based on our study's results we offer key recommendations for both software engineering researchers and industry practitioners.
+abstract: Hot fixes are urgent, unplanned changes deployed to production systems to address time-critical issues. Despite their importance, no existing evaluation benchmark focuses specifically on hot fixes. We present HotBugsjar, the first dataset dedicated to real-world hot fixes. From an initial mining of 10 active Apache projects totaling over 190K commits and 150K issue reports, we identified 746 software patches that met our hot-fix criteria. After manual evaluation, 679 were confirmed as genuine hot fixes, of which 110 are reproducible using a test suite. Building upon the Bugsjar framework, HotBugsjar integrates these 110 reproducible cases and makes available all 679 manually validated hot fixes, each enriched with comprehensive metadata to support future research. Each hot fix was systematically identified using Jira issue data, validated by independent reviewers, and packaged in a reproducible format with buggy and fixed versions, test suites, and metadata. HotBugsjar has already been adopted as the official challenge dataset for the Search-Based Software Engineering (SBSE) Conference Challenge Track, demonstrating its immediate impact. This benchmark enables the study and evaluation of tools for rapid debugging, automated repair, and production-grade resilience in modern software systems to drive research in this essential area forward.
 
 tags:
   - Hot Fix
   - Software Maintenance
+  - Benchmark
 
 # Display this page in the Featured widget?
 featured: true
