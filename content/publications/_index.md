@@ -11,6 +11,7 @@ sections:
   - block: collection
     content:
       title: 📃 Publications
+      count: 0   # 0 = show all
       filters:
         folders:
           - publications
@@ -28,7 +29,7 @@ sections:
         # featured_only: true
     design:
       view: article-grid
-      columns: 2
+      columns: 3
       show_read_time: false
       show_date: false
 ---
