@@ -10,18 +10,18 @@ design:
   spacing: '1rem'
 
 sections:
-  - block: resume-biography-3
+  - block: biography
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       # text: ''
       # Show a call-to-action button under your biography? (optional)
-      # button:
-      #   text: Download CV
-      #   url: uploads/resume.pdf
+      button:
+        text: Curriculum Vitae
+        url: uploads/resume.pdf
       headings:
         about: '📚 About me'
-        # education: ''
+        education: false
         interests: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
@@ -47,31 +47,33 @@ sections:
   #       I serve the software engineering community as a reviewer and organizer for top conferences and journals, as well as through teaching at UCL. Alongside my PhD, I work part-time as a Principal Research Scientist at a London-based startup, contributing to their tech stack and services. I am passionate about the startup ecosystem, with experience in venture capital and early-stage deep tech startups.
   #   design:
   #     columns: '1'
-  - block: collection
-    id: papers
-    content:
-      title: Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-      show_read_time: false
-      show_date: false
 
   - block: collection
     content:
-      title: Featured Publications
+      title: Featured Projects
       filters:
         folders:
           - projects
         # featured_only: true
     design:
       view: article-grid
-      columns: 2
+      columns: 3
       show_read_time: false
+
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: All Publications
+  #     text: ''
+  #     filters:
+  #       folders:
+  #         - publications
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
+  #     show_read_time: false
+  #     show_date: false
+
 
   # - block: collection
   #   id: talks

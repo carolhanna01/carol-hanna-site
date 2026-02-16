@@ -33,9 +33,9 @@ links:
     url: https://scholar.google.com/citations?user=FTK3wCkAAAAJ&hl=en&oi=ao
   - icon: academicons/orcid
     url: https://orcid.org/0009-0009-7386-1622
-  - icon: hero/document-text
-    url: uploads/resume.pdf
-    label: Download CV
+  # - icon: hero/document-text
+  #   url: uploads/resume.pdf
+  #   label: Download CV
 
 
 interests:
@@ -50,7 +50,7 @@ education:
   - degree: PhD Computer Science
     institution: University College London
     # start: 2015-09-01
-    # end: 2019-06-30
+    end: 2026
     summary: |
       Thesis: "Fixing Under Fire: Hot Fixing Time-Critical Software Failures"
     # button:
@@ -59,12 +59,13 @@ education:
     #   icon: hero/arrow-down-tray
   - degree: MSc Software Systems Engineering
     institution: University College London
+    summary: Distinction
     # start: 2013-09-01
-    # end: 2015-05-31
+    end: 2022
   - degree: BSc Computer Science
     institution: Technion Institute of Technology
     # start: 2009-09-01
-    # end: 2013-05-31
+    end: 2020
 
 experience:
   - role: Principal Research Scientist
@@ -78,7 +79,7 @@ experience:
     #   icon: hero/arrow-down-tray
   - role: Teaching Assistant and Guest Lecturer
     org: Creator Fund
-    start: 2024-10
+    start: 2023-10
 
   - role: Venture Capital Fellow
     org: University College London
