@@ -1,17 +1,18 @@
 ---
-title: 'LLM-Guided Genetic Improvement: Envisioning Semantic Aware Automated Software Evolution'
+title: 'Large language model based mutations in genetic improvement'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Alexander E. I. Brownlee
+  - James Callan
   - Karine Even-Mendoza
-  - Alexander Brownlee
   - Alina Geiger
   - Carol Hanna
   - Justyna Petke
   - Federica Sarro
-  - Dominik Sobania
+  - Dominik Sobania 
 
 # Author notes (optional)
 # author_notes:
@@ -21,7 +22,7 @@ authors:
 # date: '2023-12-10'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-08-25'
+publishDate: '2025-01-21'
 
 
 # Publication type.
@@ -30,15 +31,14 @@ publishDate: '2025-08-25'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In International Conference on Automated Software Engineering
+publication: In Automated Software Engineering Journal
 # publication_short: In International symposium on search based software engineering
 
-abstract: Genetic Improvement (GI) of software automatically creates alternative software versions that are improved according to certain properties of interests (e.g., running-time). Search-based GI excels at navigating large program spaces, but operates primarily at the syntactic level. In contrast, Large Language Models (LLMs) offer semantic-aware edits, yet lack goal-directed feedback and control (which is instead a strength of GI). As such, we propose the investigation of a new research line on AI-powered GI aimed at incorporating semantic aware search. We take a first step at it by augmenting GI with the use of automated clustering of LLM edits. We provide initial empirical evidence that our proposal, dubbed PatchCat, allows us to automatically and effectively categorize LLM-suggested patches. PatchCat identified 18 different types of software patches and categorized newly suggested patches with high accuracy. It also enabled detecting NoOp edits in advance and, prospectively, to skip test suite execution to save resources in many cases. These results, coupled with the fact that PatchCat works with small, local LLMs, are a promising step toward interpretable, efficient, and green GI. We outline a rich agenda of future work and call for the community to join our vision of building a principled understanding of LLM-driven mutations, guiding the GI search process with semantic signals. 
+abstract: Ever since the first large language models (LLMs) have become available, both academics and practitioners have used them to aid software engineering tasks. However, little research as yet has been done in combining search-based software engineering (SBSE) and LLMs. In this paper, we evaluate the use of LLMs as mutation operators for genetic improvement (GI), an SBSE approach, to improve the GI search process. In a preliminary work, we explored the feasibility of combining the Gin Java GI toolkit with OpenAI LLMs in order to generate an edit for the JCodec tool. Here we extend this investigation involving three LLMs and three types of prompt, and five real-world software projects. We sample the edits at random, as well as using local search. We also conducted a qualitative analysis to understand why LLM-generated code edits break as part of our evaluation. Our results show that, compared with conventional statement GI edits, LLMs produce fewer unique edits, but these compile and pass tests more often, with the OpenAI model finding test-passing edits 77% of the time. The OpenAI and Mistral LLMs are roughly equal in finding the best run-time improvements. Simpler prompts are more successful than those providing more context and examples. The qualitative analysis reveals a wide variety of areas where LLMs typically fail to produce valid edits commonly including inconsistent formatting, generating non-Java syntax, or refusing to provide a solution.  
 
 tags:
   - Large Langage Models
   - Genetic Improvement
-  - AI
 
 # Display this page in the Featured widget?
 featured: false
@@ -52,7 +52,7 @@ hugoblox:
 links:
   - type: paper
     label: Paper
-    url: "https://arxiv.org/abs/2508.18089"
+    url: "https://link.springer.com/article/10.1007/s10515-024-00473-6"
   # - type: code
   #   url: https://github.com/HugoBlox/kit
   # - type: dataset

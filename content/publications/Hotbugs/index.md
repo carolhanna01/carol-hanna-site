@@ -50,8 +50,9 @@ links:
   - type: paper
     label: Paper
     url: "https://dl.acm.org/doi/10.1145/3696630.3728564"
-  # - type: code
-  #   url: https://github.com/HugoBlox/kit
+  - type: GitHub
+    label: GitHub
+    url: github.com/carolhanna01/HotBugs-dot-jar
   # - type: dataset
   #   url: https://github.com/HugoBlox/kit
   # - type: slides
