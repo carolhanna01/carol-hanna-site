@@ -65,7 +65,7 @@ education:
   - degree: BSc Computer Science
     institution: Technion Institute of Technology
     summary:  |
-      Thesis: Binary2Name- Automated Detection of Binary Code Functionality using deep neural networks.
+      Thesis: Binary2Name- Automated Detection of Binary Code Functionality Using Deep Neural Networks.
     # start: 2009-09-01
     end: 2020
 
